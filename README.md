@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 
 ## Live Preview
 
-You can view the live portfolio at
+You can view the live portfolio at https://github.com/Anjanikumarpandey/Portfolio/blob/main/Portfolio/index.html
 ## Table of Contents
 
 - [About Me](#about-me)
