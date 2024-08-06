@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjani Kumar Pandey Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-hero {
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+        }
+
+        .btn-primary {
+            background-color: #4A90E2;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #357ABD;
+        }
+
+        .section-title {
+            color: #E5E7EB;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info a {
+            color: #4A90E2;
+        }
+
+        .contact-info a:hover {
+            color: #357ABD;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: #E5E7EB;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #4A90E2;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-gray-200 leading-normal tracking-normal">
+
+    <!-- Header -->
+    <header class="bg-hero text-white p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold">Anjani Kumar Pandey</h1>
+            <nav>
+                <a href="#about" class="hover-underline-animation mx-3">About</a>
+                <a href="#education" class="hover-underline-animation mx-3">Education</a>
+                <a href="#skills" class="hover-underline-animation mx-3">Skills</a>
+                <a href="#projects" class="hover-underline-animation mx-3">Projects</a>
+                <a href="#contact" class="hover-underline-animation mx-3">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto p-8 bg-gray-800 mt-6 rounded shadow-lg">
+        <div class="flex flex-col items-center">
+            <img src="formal photo official.jpg" alt="Anjani Kumar Pandey" class="rounded-full w-32 h-32 mb-4 border-4 border-blue-500 shadow-lg">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-center text-gray-400 leading-relaxed">Hello! I am Anjani Kumar Pandey, a passionate software developer with expertise in various programming languages and technologies. I am currently pursuing my Bachelor's degree in Computer Science and Engineering from Galgotias University, Greater Noida, India.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto p-8 bg-gray-800 mt-6 rounded shadow-lg">
+        <h2 class="section-title">Education</h2>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-blue-400">Bachelor of Technology (CSE)</h3>
+            <p class="text-gray-400">GALGOTIAS UNIVERSITY, GREATER NOIDA, UP, INDIA - 2024</p>
+            <p class="text-gray-400">CGPA: 7.84</p>
+        </div>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-blue-400">12th Class</h3>
+            <p class="text-gray-400">PRIVATE CANDIDATE, U.P INDIA - 2019</p>
+            <p class="text-gray-400">Percentage: 69.8%</p>
+        </div>
+        <div>
+            <h3 class="text-xl font-semibold text-blue-400">10th Class</h3>
+            <p class="text-gray-400">NEW ANGELS SENIOR SECONDARY SCHOOL, PRATAPGARH, UP, INDIA - 2016</p>
+            <p class="text-gray-400">Percentage: 92.0%</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto p-8 bg-gray-800 mt-6 rounded shadow-lg">
+        <h2 class="section-title">Technical Competencies</h2>
+        <ul class="list-disc list-inside text-gray-400">
+            <li>Java</li>
+            <li>C Language</li>
+            <li>MySQL</li>
+            <li>OOP Concepts</li>
+            <li>Web Development</li>
+            <li>PHP</li>
+            <li>NodeJs</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-8 bg-gray-800 mt-6 rounded shadow-lg">
+        <h2 class="section-title">Academic Projects</h2>
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-blue-400">Automated Attendance System Using Face Recognition</h3>
+            <p class="text-gray-400 leading-relaxed"><strong>Objective:</strong> To develop a system that utilizes facial recognition technology to streamline and automate the process of taking attendance.</p>
+            <p class="text-gray-400 leading-relaxed"><strong>Description:</strong> This project aims to modernize the attendance tracking process, reducing administrative burdens and improving overall efficiency within educational institutions, corporate environments, or any setting requiring attendance monitoring.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto p-8 bg-gray-800 mt-6 rounded shadow-lg">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p class="text-gray-400"><strong>Phone:</strong> +91-9569226643</p>
+            <p class="text-gray-400"><strong>Email:</strong> <a href="mailto:Pandeyanjani624@gmail.com" class="hover:underline">Pandeyanjani624@gmail.com</a></p>
+            <p class="text-gray-400"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anjani-kumar-pandey-9a892823" class="hover:underline">linkedin.com/in/anjani-kumar-pandey-9a892823</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-hero text-white p-6 mt-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Anjani Kumar Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
